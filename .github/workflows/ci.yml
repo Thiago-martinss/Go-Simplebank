@@ -15,7 +15,6 @@ on:
 
 jobs:
     
-  test:
     - name: Test
     runs-on: ubuntu-latest
 
@@ -42,6 +41,7 @@ jobs:
 
     -name: Run migrations
       run: make migrateup
-      
+
     - name: Test
       run: make test
+
