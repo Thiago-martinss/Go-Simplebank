@@ -20,6 +20,10 @@ func NewServer(store *db.Store) *Server {
 	router.POST("/accounts", server.createAccount)
 	router.GET("/accounts/:id", server.getAccount)
 	router.GET("/accounts/", server.listAccounts)
+	router.POST("/accounts/:id", server.updateAccount)
+	router.DELETE("/accounts/delete/:id", server.deleteAccount)
+
+
 
 
 
